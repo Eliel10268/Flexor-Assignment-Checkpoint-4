@@ -1,0 +1,252 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  background: #fff;
+  padding: 1em 0;
+}
+
+.header .container,
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header .nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+}
+
+.header .nav a.active {
+  color: orange;
+}
+
+.hero {
+  background: url("background.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-actions img {
+  margin-right: 1em;
+}
+
+.btn {
+  background: lightgrey;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+
+.card {
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 1em;
+}
+
+.card-large {
+  background: orange;
+  color: #fff;
+  padding: 2em;
+}
+
+.about,
+.services,
+.mission,
+.testimonial,
+.team,
+.faq {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.about .container,
+.services .container,
+.mission .container,
+.testimonial .container,
+.team .container,
+.faq .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services .service-cards,
+.mission .mission-cards,
+.team .team-cards,
+.faq .faq-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-cards .card,
+.mission-cards .card,
+.team-cards .card,
+.faq .row {
+  margin: 1em;
+  padding: 1em;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 2em);
+}
+
+.card {
+  color: black;
+}
+.portfolio,
+.pricing,
+.contact {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.portfolio-filters .filter {
+  background: orange;
+  border-radius: 12px;
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-grid img {
+  width: calc(33% - 2em);
+  margin: 1em;
+}
+
+.contact-info .card {
+  flex: 1;
+  padding: 1em;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+}
+
+.footer {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.footer .social-links a {
+  margin: 0 1em;
+  color: orange;
+  text-decoration: none;
+}
+
+.footer .designer {
+  color: orange;
+}
+
+/* Section Backgrounds */
+.about,
+.services,
+.testimonial,
+.team,
+.faq {
+  background: beige;
+}
+
+.hero,
+.mission,
+.portfolio,
+.pricing,
+.contact {
+  background: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header .container,
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .cards,
+  .service-cards,
+  .mission-cards,
+  .team-cards,
+  .faq-rows,
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .card,
+  .faq .row {
+    width: 100%;
+  }
+
+  .portfolio-grid img {
+    width: 100%;
+  }
+}
+
+.right-arrow {
+  width: 30px;
+}
